@@ -1,0 +1,42 @@
+.item-list {
+  .pager {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  
+    list-style: none;
+  
+    li {
+      position: relative;
+
+      margin: 0;
+      padding: 0;
+    }
+  
+    li[class^="pager"] a,
+    .pager-current {
+      display: block;
+      box-sizing: border-box;
+      width: 44px;
+      height: 44px;
+      padding: 10px;
+  
+      text-align: center;
+      color: #000;
+  
+      border-radius: 5px;
+    }
+  
+    li[class^="pager"] a:not(.pi-link-arrow):focus,
+    li[class^="pager"] a:not(.pi-link-arrow):hover {
+      color: #fff;
+  
+      background-color: #5f2282;
+    }
+  
+    li[class^="pager"] a:active {
+      opacity: 0.3;
+    }
+  }
+}

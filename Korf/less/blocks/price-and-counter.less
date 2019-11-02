@@ -1,0 +1,90 @@
+.price-and-counter {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  .price {
+    text-decoration: line-through;
+    font-size: 24px;
+    line-height: 24px;
+    color: #959595;
+  }
+  .price-discount {
+    margin-left: 20px;
+
+    font-size: 32px;
+    line-height: 32px;
+    color: #5f2282;
+  }
+
+  .ui-spinner {
+    margin-left: 75px;
+    padding-left: 30px;
+
+    .ui-spinner-input {
+      box-sizing: border-box;
+      width: 97px;
+      height: 40px;
+      margin: 0 10px;
+      padding: 10px;
+  
+      text-align: center;
+      color: #5f2282;
+  
+      background-color: transparent;
+  
+      border: 1px solid #ccc;
+      border-radius: 15px;
+    }
+
+    .ui-spinner-input:focus,
+    .ui-spinner-input:hover {
+      border-color: #5f2282;
+    }
+  
+    .ui-spinner-button {
+      position: relative;
+  
+      display: inline-block;
+      padding: 0;
+      width: 40px;
+      height: 40px;
+  
+      font-size: 30px;
+      color: #d1d1d1;
+      background: none;
+      background-color: transparent;
+  
+      border: none;
+  
+      cursor: pointer;
+    }
+
+    .ui-spinner-button:focus,
+    .ui-spinner-button:hover {
+      color: #5f2282;
+    }
+
+    .ui-spinner-button:active {
+      opacity: 0.3;
+    }
+
+    .ui-spinner-down {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .ui-widget-content {
+    border: none;
+    background: none;
+  }
+}
+
+@media (max-width: 548px) {
+  .counter {
+    margin-left: 20px;
+  }
+}

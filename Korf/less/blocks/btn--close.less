@@ -1,0 +1,54 @@
+.btn--close {
+  position: relative;
+
+  padding: 0;
+  width: 20px;
+  height: 20px;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.btn--close::before,
+.btn--close::after {
+  content: '';
+
+  position: absolute;
+  top: 70%;
+  left: 0;
+
+  width: 18px;
+  height: 2px;
+
+  background-color: #d1d1d1;
+
+  cursor: pointer;
+}
+
+.btn--close:focus::before,
+.btn--close:hover::before,
+.btn--close:focus::after,
+.btn--close:hover::after {
+  background-color: #5f2282;
+}
+
+.btn--close:active::before,
+.btn--close:active::after {
+  opacity: 0.3;
+}
+
+.btn--close::before {
+  top: 50%;
+  transform: rotate(-45deg);
+}
+
+.btn--close::after {
+  top: 50%;
+  transform: rotate(45deg);
+}
+
+.btn--close {
+  margin-left: 90px;
+}

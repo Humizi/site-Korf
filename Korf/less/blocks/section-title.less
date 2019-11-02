@@ -1,0 +1,36 @@
+.section-title {
+  position: relative;
+
+  margin: 10px 0 30px 0;
+
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 34px;
+  line-height: 44px;
+  color: #5f2282;
+}
+
+.section-title::before {
+  content: '';
+
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+
+  width: 114px;
+  height: 8px;
+
+  background-image: url(../img/shape-thin.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+@media (max-width: 548px) {
+  .section-title {
+    text-align: center;
+  }
+
+  .section-title::before {
+    display: none;
+  }
+}

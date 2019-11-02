@@ -1,0 +1,112 @@
+.block-event {
+  margin-top: 30px;
+
+  .e-position {
+    padding: 70px 0 96px 100px;
+
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  .e-title {
+    position: relative;
+
+    display: block;
+    margin: 0;
+
+    text-transform: uppercase;
+    font-size: 32px;
+    line-height: 42px;
+    color: #5f2282;
+  }
+
+  .e-title::before {
+    content: '';
+
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 114px;
+    height: 8px;
+
+    background-image: url(../img/shape-current.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  .e-desc {
+    display: inline-block;
+    width: 350px;
+    margin: 0;
+    margin-top: 43px;
+  }
+
+  .e-catalog-link {
+    display: block;
+    margin-top: 25px;
+    padding: 15px 40px 15px 10px;
+
+    background-image: url(../img/triangle-white.png);
+    background-repeat: no-repeat;
+    background-position: 140px 21px;
+  }
+
+  .e-card-wrap {
+    margin-left: 30px;
+  }
+
+  .e-card-discount {
+    position: relative;
+    height: 406px;
+
+    background-image: url(../img/card-discount.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    .ecd-discount {
+      position: absolute;
+      top: 20px;
+      right: 8px;
+
+      font-size: 26px;
+      line-height: 36px;
+      color: #fff;
+    }
+
+    .ecd-img {
+      position: absolute;
+      top: 40px;
+      left: calc(50% - 34px);
+    }
+
+    .ecd-desc {
+      position: absolute;
+      bottom: 27px;
+      left: 60px;
+
+      max-width: 130px;
+      margin: 0;
+
+      text-transform: uppercase;
+      font-weight: 700;
+      line-height: 20px;
+      color: #1378d3;
+    }
+  }
+}
+
+@media (max-width: 548px) {
+  .block-event {
+    .e-position {
+      background-size: 530px 330px;
+    }
+
+    .e-card-discount {
+      margin: 0 auto;
+
+      .ecd-img {
+        left: 100px;
+      }
+    }
+  }
+}

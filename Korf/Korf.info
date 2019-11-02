@@ -1,0 +1,18 @@
+name = Korf
+description = 123.
+package = Core
+version = VERSION
+core = 7.x
+
+scripts[] = plugins/swiper/swiper.min.js
+scripts[] = plugins/scrollbar/jquery.slimscroll.min.js
+scripts[] = plugins/mask/inputmask.min.js
+scripts[] = plugins/validation/jquery.validate.min.js
+scripts[] = js/scripts.min.js
+
+stylesheets[all][] = css/bootstrap-grid.min.css
+stylesheets[all][] = plugins/swiper/swiper.min.css
+stylesheets[all][] = css/style.min.css
+
+regions[content] = Содержимое
+

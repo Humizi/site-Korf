@@ -1,0 +1,81 @@
+.block-feedback {
+  margin-top: 35px;
+
+  background-image: url(../img/communication-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  
+  .f-form {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+
+    .ff-title {
+      position: relative;
+
+      margin: 0;
+      margin-bottom: 50px;
+
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 36px;
+      color: #5f2282;
+    }
+
+    .ff-title::before {
+      content: '';
+    
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+    
+      width: 114px;
+      height: 8px;
+    
+      background-image: url(../img/shape-current.png);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+
+    label.option {
+      margin-bottom: 25px;
+      margin-left: 25px;
+    }
+    
+    label.option::before {
+      content: '';
+    
+      position: absolute;
+      top: 0;
+      left: 0;
+    
+      width: 25px;
+      height: 25px;
+    
+      background-color: #fff;
+      border-radius: 5px;
+    
+      cursor: pointer;
+    }
+    
+    input[type="checkbox"]:checked + label.option::after {
+      content: '';
+    
+      position: absolute;
+      top: 7px;
+      left: 4px;
+    
+      width: 16px;
+      height: 12px;
+    
+      background-image: url(../img/check.png);
+    
+      cursor: pointer;
+    }
+
+    input {
+      margin-left: 25px;
+    }
+  }
+}

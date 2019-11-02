@@ -1,0 +1,60 @@
+.block-navigation {
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-top: 25px;
+    padding: 0;
+    padding-left: 30px;
+  
+    list-style: none;
+
+    .leaf {
+      list-style: none;
+    }
+  
+    a {
+      color: #828282;
+    }
+  
+    a:hover,
+    a:focus {
+      color: #5f2282;
+    }
+  
+    a:active {
+      opacity: 0.3;
+    }
+  
+    .active {
+      position: relative;
+      font-weight: 700;
+      color: #5f2282;
+    }
+  
+    .active::before {
+      content: '';
+  
+      position: absolute;
+      top: 27px;
+      left: -13px;
+  
+      width: 114px;
+      height: 8px;
+  
+      background-image: url(../img/shape-current.png);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+  }
+}
+
+@media (max-width: 548px) {
+  .block-navigation {
+    .menu {
+      padding: 0 5px;
+      font-size: 14px; 
+    }
+  }
+}
